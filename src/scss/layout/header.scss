@@ -4,33 +4,57 @@ $mozzarella: #EBE1D3;
 $dough: #DEC9A0;
 $coal: #2D2A26;
 
-
-nav {
+header {
     background-color: $tomato;
-    padding: 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
 
-    ul {
-        text-align: right;
-        position: static;
-    }
+    nav {
 
-    li {
-        display: inline;
-        padding: 1em;
-    }
+        padding: 0.5em;
 
-    a {
-        color: black;
-        font-weight: 400;
-        font-size: 20px;
-        text-transform: uppercase;
-        text-decoration: none;
+        ul {
+            text-align: right;
+            position: static;
+        }
 
-        &:hover {
-            cursor: pointer;
-            text-decoration: underline;
+        li {
+            display: inline;
+            padding: 1em;
+        }
+
+        a {
+            color: black;
+            font-weight: 400;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
         }
 
     }
+}
 
+.header-1 {
+    grid-column: 1/2;
+
+}
+
+.header-2 {
+    grid-column: 2/3;
+
+    img {
+        width: 80px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.header-3 {
+    grid-column: 3.4;
 }
