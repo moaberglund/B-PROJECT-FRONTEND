@@ -4,7 +4,12 @@
 $inter: "Inter", sans-serif;
 $base-font: $inter;
 
+
+$dough: #DEC9A0; 
+$mozzarella: #EBE1D3;
+
 body {
+    background-color: $mozzarella;
     font-family: $base-font;
 }
 
