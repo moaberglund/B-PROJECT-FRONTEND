@@ -1,0 +1,30 @@
+nav {
+    background-color: rgb(153, 153, 153);
+    padding: 0.5em;
+
+    ul {
+        text-align: right;
+        position: static;
+    }
+
+    li {
+        display: inline;
+        padding: 1em;
+    }
+
+    a {
+        color: black;
+        text-shadow: 0 2px 8px 0 rgb(210, 230, 223);
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+    }
+
+}

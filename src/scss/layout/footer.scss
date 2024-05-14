@@ -1,0 +1,29 @@
+footer {
+
+
+    .footer-3 {
+        ul {
+            text-align: right;
+        }
+
+        li {
+            display: block;
+            line-height: 1.5em;
+        }
+
+        a {
+            color: black;
+            text-shadow: 0 2px 8px 0 rgb(210, 230, 223);
+            font-weight: 400;
+            font-size: 16px;
+            text-decoration: none;
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        }
+    }
+
+}
