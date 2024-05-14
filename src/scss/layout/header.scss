@@ -6,7 +6,7 @@ $coal: #2D2A26;
 
 
 nav {
-    background-color: rgb(153, 153, 153);
+    background-color: $tomato;
     padding: 0.5em;
 
     ul {
@@ -21,7 +21,6 @@ nav {
 
     a {
         color: black;
-        text-shadow: 0 2px 8px 0 rgb(210, 230, 223);
         font-weight: 400;
         font-size: 20px;
         text-transform: uppercase;
