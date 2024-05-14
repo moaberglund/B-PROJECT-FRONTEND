@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+$inter: "Inter", sans-serif;
+$base-font: $inter;
+
+body {
+    font-family: $base-font;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
