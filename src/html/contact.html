@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <link rel="stylesheet" href="../scss/main.scss">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <script type="module" src="../js/navigation.js"></script>
+    <script src="https://kit.fontawesome.com/9543e08d94.js" crossorigin="anonymous"></script>
+    <!-- google icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header>
+
+        <div id="drop-nav" class="header-1">
+
+            <button class="menu-btn open" id="open-menu"><span class="material-symbols-outlined">
+                    menu
+                </span>
+            </button>
+            <nav id="burger-nav">
+                <button class="menu-btn close" id="close-menu"><i class="fa-solid fa-x" style="color:  #000000;"></i>
+                </button>
+                <ul>
+                    <li><a href="../index.html">Homepage</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="header-2">
+
+            <img src="../media/pizza-logo.svg" alt="Pizza logo">
+
+        </div>
+
+
+        <div class="header-3">
+            <nav id="desktop-navigation">
+                <ul>
+                    <li><a href="../index.html">Homepage</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+
+        <section id="booking">
+            <h1>Get in contact with us</h1>
+
+            <form>
+                <h2>New form:</h2>
+
+                <label for="contact-name">Name:</label><br>
+                <input name="contact-name" id="contact-name" type="text"><br>
+
+                <label for="contact-phone">Phone:</label><br>
+                <input id="contact-phone" name="contact-phone" type="number"><br>
+
+                <label for="contact-mail">Mail:</label><br>
+                <input id="contact-mail" name="contact-mail" type="email"><br>
+
+                <label for="contact-message">Message:</label><br>
+                <textarea name="contact-message" id="contact-message"></textarea><br>
+              
+                <button id="addBookingBtn">Add new</button>
+
+                <p id="error-message"></p>
+
+            </form>
+
+
+        </section>
+
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer-1">
+            <h2>Opening hours:</h2>
+            <p>Mon-Thu: 19:00-23:00</p>
+            <p>Fri-Sat: 16:00-00:00</p>
+            <p>Sun: Closed</p>
+        </div>
+
+        <div class="footer-3">
+            <ul>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Find Us</a></li>
+                <li><a href="">Order</a></li>
+
+                <li><a href="login.html">Admin</a></li>
+
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
