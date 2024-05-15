@@ -1,0 +1,42 @@
+$basil: #4B3A29;
+
+form {
+    width: 250px;
+    margin: 0 auto;
+
+    h2 {
+        padding-bottom: 0.5em;
+        font-weight: 500;
+    }
+
+    label {
+        padding-top: 1.5em;
+        letter-spacing: 1px;
+    }
+
+    input {
+        padding: 0.3em;
+        width: 250px;
+    }
+
+    textarea {
+        width: 250px;
+        height: 75px;
+    }
+    button {
+        padding: 0.5em 0.8em;
+        border-radius: 50px;
+        background-color: $basil;
+        float: right;
+        display: block;
+        margin: 2.5em auto;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: $basil;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+    }
+}
