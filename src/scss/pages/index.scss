@@ -1,3 +1,22 @@
+$mozzarella: #EBE1D3;
+$basil: #4B3A29;
+
+
+.hero {
+    h1 {
+        text-align: center;
+        padding-top: 0.5em;
+        color: $mozzarella;
+        text-shadow: 1px 2px 2px black;
+        font-weight: 400;
+        font-size: 2.8em;
+        text-transform: uppercase;
+        letter-spacing: 7px;
+        word-spacing: 7px;
+        
+    }
+}
+
 section {
 
     width: 95%;
@@ -15,9 +34,12 @@ section {
         flex-direction: column;
     }
 
-    h1 {
+    h2 {
+        color: $basil;
+        text-transform: uppercase;
         font-size: 1.7em;
         font-weight: 400;
+        letter-spacing: 2px;
         padding: 0.5em 0;
     }
 

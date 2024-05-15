@@ -8,9 +8,12 @@ $base-font: $inter;
 $dough: #DEC9A0; 
 $mozzarella: #EBE1D3;
 
-body {
+body {    
     background-color: $mozzarella;
     font-family: $base-font;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 * {
