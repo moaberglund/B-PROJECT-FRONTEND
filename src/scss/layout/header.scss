@@ -3,6 +3,8 @@ $basil: #4B3A29;
 $mozzarella: #EBE1D3;
 $dough: #DEC9A0;
 $coal: #2D2A26;
+$transparent-coal: rgb(45, 42, 38, 0.9);
+
 
 header {
     background-color: $tomato;
@@ -30,12 +32,13 @@ header {
 #drop-nav {
 
     nav {
-        background-color: $mozzarella;
+        background-color: $coal;
         position: fixed;
         left: 0;
         top: 0;
         height: 100vh;
-        width: 100vw;
+        width: 30vw;
+        max-width: 400px;
         display: none;
 
         ul {
@@ -54,7 +57,7 @@ header {
         }
 
         a {
-            color: black;
+            color: $mozzarella;
             text-decoration: none;
             font-weight: 600;
             font-size: 20px;
@@ -91,8 +94,9 @@ header {
         left: -2em;
         top: 0;
         padding: 1em 0 1em 5em;
-        background-color: $mozzarella;
-        width: 100vw;
+        background-color: $tomato;
+        width: 30vw;
+        max-width: 400px;
         height: 10vh;
     }
 }
