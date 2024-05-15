@@ -26,6 +26,36 @@
             <h1>placeholder</h1>
             <p>Protected route, admin</p>
 
+            <div id="addmenu">
+                <form>
+                    <h1>Add new menu object</h1>
+
+                    <label for="menu-category">Category:</label><br>
+                    <select name="menu-category" id="menu-category">
+
+                        <option value="Nibble">Nibble</option>
+                        <option value="Pizza">Pizza</option>
+                        <option value="Sweet">Sweet</option>
+                        <option value="Wine">Wine</option>
+
+                    </select><br>
+        
+                    <label for="menu-name">Name:</label><br>
+                    <input id="menu-name" name="menu-name" type="text"><br>
+        
+                    <label for="menu-price">Price:</label><br>
+                    <input id="menu-price" name="menu-price" type="number"><br>
+
+                    <label for="menu-description">Description:</label><br>
+                    <textarea name="menu-description" id="menu-description"></textarea><br>
+        
+                    <button id="addMenuBtn">Add new</button>
+        
+                    <p id="error-message"></p>
+        
+                </form>
+            </div>
+
 
         </section>
     </main>
@@ -37,6 +67,8 @@
 
 
     <script type="module" src="../js/protected.js"></script>
+    <script type="module" src="../js/postMenu.js"></script>
+
 </body>
 
 </html>

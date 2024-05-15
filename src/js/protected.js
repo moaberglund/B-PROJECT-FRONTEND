@@ -1,6 +1,6 @@
 "use strict";
 
-const url = "https://b-project.onrender.com/protected";
+const url = "https://b-project.onrender.com/api/protected";
 
 window.onload = init;
 

@@ -72,7 +72,7 @@ async function processAPI() {
         <p>${price} &euro; </p>
         <p>${description}</p>
         `
-        nibble.appendChild(nibbleDiv);
+            nibble.appendChild(nibbleDiv);
         }
 
         //om kategori är pizza
@@ -82,7 +82,7 @@ async function processAPI() {
         <p>${price} &euro; </p>
         <p>${description}</p>
         `
-        pizza.appendChild(pizzaDiv);
+            pizza.appendChild(pizzaDiv);
         }
 
         //om kategori är efterrätt
@@ -92,7 +92,7 @@ async function processAPI() {
         <p>${price} &euro; </p>
         <p>${description}</p>
         `
-        sweet.appendChild(sweetDiv);
+            sweet.appendChild(sweetDiv);
         }
 
         //om kategori är vin
@@ -102,7 +102,7 @@ async function processAPI() {
         <p>${price} &euro;</p>
         <p>${description}</p>
         `
-        wine.appendChild(wineDiv);
+            wine.appendChild(wineDiv);
         }
     })
 
