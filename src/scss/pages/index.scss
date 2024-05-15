@@ -1,0 +1,35 @@
+section {
+    
+    width: 95%;
+    margin: 0 auto;
+    line-height: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+
+
+    article {
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255, 0.7);
+        margin: 1em 1em 1em 0;
+    }
+    h1 {
+        font-size: 1.7em;
+        font-weight: 400;
+        padding: 0.5em 0;
+    }
+
+}
+
+.left {
+    grid-column: 1/2;
+    grid-row: 1;
+    padding: 0.5em 2em 1em 2em;
+}
+
+.right {
+    grid-column: 2/3;
+    grid-row: 1;
+    padding: 0.5em 2em 1em 2em;
+}
+
+
