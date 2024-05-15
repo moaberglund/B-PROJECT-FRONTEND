@@ -1,4 +1,5 @@
 $dough: #DEC9A0;
+$tomato: #A23B23;
 
 footer {
     display: grid;
@@ -9,7 +10,14 @@ footer {
     .footer-1 {
         grid-column: 1/2;
         grid-row: 1;
+        margin: 1em 0 1em 3em;
+        line-height: 1.5em;
 
+        h2 {
+            color: $tomato;
+            font-weight: 400;
+            font-size: 1.2em;
+        }
     }
 
     .footer-2 {
@@ -21,6 +29,7 @@ footer {
     .footer-3 {
         grid-column: 3/4;
         grid-row: 1;
+        margin: 1em 3em 1em;
 
         ul {
             text-align: right;
