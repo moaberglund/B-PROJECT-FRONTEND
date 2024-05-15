@@ -1,3 +1,9 @@
+$coal: #2D2A26;
+$transparent-coal: rgb(45, 42, 38, 0.5);
+$basil: #4B3A29;
+
+
+
 #printed-menu {
     article {
         border-radius: 5px;
@@ -6,6 +12,29 @@
         width: 40%;
         margin: 0.5em 1em;
         padding: 0.5em 1em;
+        line-height: 1.6em;
+        &:hover {
+            cursor: default;
+        }
+
+        div {
+            padding: 0.8em 0;
+            border-bottom: 1px solid $transparent-coal;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            color: $basil;
+            font-weight: 400;
+            font-size: 1.8em;
+            letter-spacing: 2px;
+            margin: 0.4em 0 0.2em 0;
+        }
+        h3 {
+            font-weight: 600;
+            color: $coal;
+            letter-spacing: 1px;
+        }
     }
 }
 

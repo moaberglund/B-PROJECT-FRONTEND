@@ -33,16 +33,16 @@ async function processAPI() {
 
     //article tagg för nibble
     const nibble = document.getElementById("nibble");
-    nibble.innerHTML = "";
+    nibble.innerHTML = `<h2 class="menu-title">Nibble</h2>`;
     //article tagg för pizzas
     const pizza = document.getElementById("pizza");
-    pizza.innerHTML = "";
+    pizza.innerHTML = `<h2 class="menu-title">Pizza</h2>`;
     //article för efterrätter
     const sweet = document.getElementById("sweet");
-    sweet.innerHTML = "";
+    sweet.innerHTML =  `<h2 class="menu-title">Sweet Tooth</h2>`;
     //article för vin
     const wine = document.getElementById("wine");
-    wine.innerHTML = "";
+    wine.innerHTML =  `<h2 class="menu-title">Wine</h2>`;
 
     result.forEach(item => {
         const id = item._id;
