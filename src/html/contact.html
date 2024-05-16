@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../scss/main.scss">
     <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
     <script type="module" src="../js/navigation.js"></script>
+    <script type="module" src="../js/contact.js"></script>
     <script src="https://kit.fontawesome.com/9543e08d94.js" crossorigin="anonymous"></script>
     <!-- google icons -->
     <link rel="stylesheet"
@@ -62,22 +63,23 @@
             <h1 class="fade">Get in contact with us</h1>
 
             <form>
-        
-                <label for="contact-name">Name:</label><br>
-                <input name="contact-name" id="contact-name" type="text"><br>
 
-                <label for="contact-phone">Phone:</label><br>
-                <input id="contact-phone" name="contact-phone" type="number"><br>
+                <label for="name">Name:</label><br>
+                <input name="name" id="contact-name" type="text"><br>
 
-                <label for="contact-mail">Mail:</label><br>
-                <input id="contact-mail" name="contact-mail" type="email"><br>
+                <label for="phone">Phone:</label><br>
+                <input id="contact-phone" name="phone" type="number"><br>
 
-                <label for="contact-message">Message:</label><br>
-                <textarea name="contact-message" id="contact-message"></textarea><br>
+                <label for="mail">Mail:</label><br>
+                <input id="contact-mail" name="mail" type="email"><br>
 
-                <button id="addBookingBtn">Send</button>
+                <label for="message">Message:</label><br>
+                <!--  <input type="text" name="message" id="contact-message"><br> -->
+                <textarea name="message" id="contact-message"></textarea><br>
 
-                <p id="error-message"></p>
+                <button id="addContactFormBtn">Send</button>
+
+                <p id="message"></p>
 
             </form>
 
@@ -96,10 +98,10 @@
             <p>Fri-Sat: 16:00-00:00</p>
             <p>Sun: Closed</p>
         </div>
-        
+
         <div class="footer-2">
-           <a href="booking.html">Book a table</a>
-            
+            <a href="booking.html">Book a table</a>
+
         </div>
 
         <div class="footer-3">
