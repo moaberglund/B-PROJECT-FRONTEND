@@ -35,7 +35,7 @@ async function loginUser(username, password) {
 
     if (response.status === 200) {
         console.log(data.token);
-        localStorage.setItem("token", data.token);
+        localStorage.setItem("token", data.response.token);
         localStorage.setItem("user", User.username);
         window.location.href = "admin.html"
     } else {

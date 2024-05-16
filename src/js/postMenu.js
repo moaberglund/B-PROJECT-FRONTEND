@@ -43,14 +43,11 @@ async function addMenu(category, name, price, description) {
 
     let data = await response.json();
 
-    if (response.status === 201) {
-        console.log(data.token);
-        localStorage.setItem("token", data.token);
-        window.location.href = "admin.html"
+    if (response.ok) {
+        document.getElementById("info-message").innerHTML = "Successfuly added!";
     } else {
         document.getElementById("error-message").innerHTML = "Failed to add menu object.";
         throw new Error("Failed to add menu object");
-
     }
 
     // nollställ formuläret
