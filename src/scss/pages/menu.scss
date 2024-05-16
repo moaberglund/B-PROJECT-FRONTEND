@@ -2,24 +2,38 @@ $coal: #2D2A26;
 $transparent-coal: rgb(45, 42, 38, 0.5);
 $basil: #4B3A29;
 
+.sartoria {
+    h1 {
+        text-align: center;
+        padding-top: 0.2em;
+        color: $basil;
+        text-shadow: 1px 2px 2px black;
+        font-weight: 400;
+        font-size: 2.8em;
+        text-transform: uppercase;
+        letter-spacing: 7px;
+        word-spacing: 7px;
+    }
 
+}
 
 #printed-menu {
     article {
         border-radius: 5px;
         background-color: rgb(255, 255, 255, 0.7);
-        margin: 1em 1em 1em 0;
-        width: 40%;
-        margin: 0.5em 1em;
+        width: 490px;
+        max-width: 90vw;
+        margin: 0.5em auto;
         padding: 0.5em 1em;
         line-height: 1.6em;
+
         &:hover {
             cursor: default;
         }
 
         div {
             padding: 0.8em 0;
-            border-bottom: 1px solid $transparent-coal;
+            border-bottom: 1px solid $transparent-coal; // kan mellan varje meny inlägg
         }
 
         h2 {
@@ -30,6 +44,7 @@ $basil: #4B3A29;
             letter-spacing: 2px;
             margin: 0.4em 0 0.2em 0;
         }
+
         h3 {
             font-weight: 600;
             color: $coal;
@@ -40,9 +55,47 @@ $basil: #4B3A29;
 
 .menu-image {
     img {
-        max-width: 500px;
-        margin: 0.5em 1em;
+        width: 490px;
+        max-width: 90vw;
+        margin: 0.5em auto;
+        display: block;
         border-radius: 5px;
 
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    #printed-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .menu-left {
+            grid-column: 1/2;
+
+            article {
+                float: right;
+                margin-right: 0.7em;
+            }
+
+            img {
+                float: right;
+                margin-right: 0.7em;
+            }
+        }
+
+        .menu-right {
+            grid-column: 2/3;
+
+            article {
+                float: left;
+                margin-left: 0.7em;
+            }
+
+            img {
+                float: left;
+                margin-left: 0.7em;
+            }
+        }
     }
 }
