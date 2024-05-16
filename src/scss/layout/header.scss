@@ -1,5 +1,5 @@
 $tomato: #A23B23;
-$burned-tomato:#8E1103;
+$burned-tomato: #8E1103;
 $basil: #4B3A29;
 $mozzarella: #EBE1D3;
 $dough: #DEC9A0;
@@ -148,6 +148,7 @@ header {
             &:hover {
                 cursor: pointer;
                 text-decoration: underline;
+                color: $basil;
             }
 
         }
