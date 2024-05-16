@@ -58,7 +58,7 @@ async function processAPI() {
 
         //skapa article tagg
         const article = document.createElement("article");
-        article.classList.add("custumer-message");
+        article.classList.add("customer-message");
 
         article.innerHTML = `
         <p>Name: ${name}</p>
