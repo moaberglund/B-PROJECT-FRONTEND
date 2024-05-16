@@ -64,7 +64,7 @@ async function processAPI() {
         <p>Name: ${name}</p>
         <p>Phone: ${phone}</p>
         <p>Mail: ${mail}</p>
-        <p>Message:${textmessage}</p>
+        <p>Message:<br>${textmessage}</p>
         `
         print.appendChild(article);
     });
