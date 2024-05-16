@@ -17,6 +17,7 @@ if (addMenuBtn) {
         const price = document.getElementById("menu-price").value;
         const description = document.getElementById("menu-description").value;
 
+        console.log(category, name, price, description);
 
         await addMenu(category, name, price, description);
     });
@@ -30,13 +31,15 @@ async function addMenu(category, name, price, description) {
         price: price,
         description: description
     }
+    console.log(Menu);
+
     const token = localStorage.getItem("token");
 
     const response = await fetch(url, {
         method: "POST",
         headers: {
-            "content-type": "application/json",
-            'Authorization': 'Bearer ' + token
+            'Authorization': 'Bearer ' + token,
+            "content-type": "application/json"
         },
         body: JSON.stringify(Menu)
     });
@@ -44,9 +47,9 @@ async function addMenu(category, name, price, description) {
     let data = await response.json();
 
     if (response.ok) {
-        document.getElementById("info-message").innerHTML = "Successfuly added!";
+        document.getElementById("info-message").innerHTML = "Successfuly added!" + data.message;
     } else {
-        document.getElementById("error-message").innerHTML = "Failed to add menu object.";
+        document.getElementById("error-message").innerHTML = "Failed to add menu object." + data.error;
         throw new Error("Failed to add menu object");
     }
 
