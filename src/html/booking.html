@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../scss/main.scss">
     <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
     <script type="module" src="../js/navigation.js"></script>
+    <script type="module" src="../js/booking.js"></script>
     <script src="https://kit.fontawesome.com/9543e08d94.js" crossorigin="anonymous"></script>
     <!-- google icons -->
     <link rel="stylesheet"
@@ -63,27 +64,27 @@
 
             <form>
 
-                <label for="booking-name">Name:</label><br>
-                <input name="booking-name" id="booking-name" type="text"><br>
+                <label for="name">Name:</label><br>
+                <input name="name" id="booking-name" type="text"><br>
 
-                <label for="booking-phone">Phone:</label><br>
-                <input id="booking-phone" name="booking-phone" type="number"><br>
+                <label for="phone">Phone:</label><br>
+                <input id="booking-phone" name="phone" type="number"><br>
 
-                <label for="booking-mail">Mail:</label><br>
-                <input id="booking-mail" name="booking-mail" type="email"><br>
+                <label for="mail">Mail:</label><br>
+                <input id="booking-mail" name="mail" type="email"><br>
 
-                <label for="booking-amount">Amount:</label><br>
-                <input name="booking-amount" id="booking-amount" type="number"><br>
+                <label for="amount">Amount:</label><br>
+                <input name="amount" id="booking-amount" type="number"><br>
 
-                <label for="booking-day">Day:</label><br>
-                <input type="date" name="booking-day" id="booking-day"><br>
+                <label for="day">Day:</label><br>
+                <input type="date" name="day" id="booking-day"><br>
 
-                <label for="booking-time">Time:</label><br>
-                <input type="date" name="booking-time" id="booking-time"><br>
+                <label for="time">Time:</label><br>
+                <input type="text" name="time" id="booking-time"><br>
 
                 <button id="addBookingBtn">Add new</button>
 
-                <p id="error-message"></p>
+                <p id="message"></p>
 
             </form>
 
@@ -116,12 +117,6 @@
         </div>
     </footer>
 
-
-
-
-
-
-    <script type="module" src="../js/menu.js"></script>
 </body>
 
 </html>
