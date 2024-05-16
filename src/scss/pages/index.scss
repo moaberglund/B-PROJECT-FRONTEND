@@ -13,25 +13,34 @@ $basil: #4B3A29;
         text-transform: uppercase;
         letter-spacing: 7px;
         word-spacing: 7px;
-        
+
     }
 }
 
 #index {
-
+    display: flex;
+    flex-direction: column;
     width: 95%;
     margin: 0 auto;
     line-height: 1.5em;
-    display: grid;
-    grid-template-columns: 1fr 1fr auto;
 
 
     article {
+        width: 1000px;
+        max-width: 90vw;
+        margin: 0.8em auto;
+        padding: 0.5em 1em;
+        line-height: 1.6em;
         border-radius: 5px;
         background-color: rgb(255, 255, 255, 0.7);
-        margin: 1em 1em 1em 0;
-        display: flex;
-        flex-direction: column;
+
+        &:hover {
+            cursor: default;
+        }
+    }
+
+    div {
+        padding: 0.8em 0;
     }
 
     h2 {
@@ -44,41 +53,15 @@ $basil: #4B3A29;
     }
 
     .image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        img {
+            width: 1000px;
+            max-width: 90vw;
+            margin: 0 auto;
+            display: block;
+            border-radius: 5px;
+        }
     }
 
-    img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px;
-    }
-
-}
-
-//about us
-.left-1 {
-    grid-column: 1/2;
-    grid-row: 1;
-    padding: 0.5em 2em 1em 2em;
-}
-
-//bread making
-.right-1 {
-    grid-column: 2/3;
-    grid-row: 1;
-}
 
 
-.left-2 {
-    grid-column: 1/2;
-    grid-row: 2;
-    padding: 0.5em 2em 1em 2em;
-}
-
-.right-2 {
-    grid-column: 2/3;
-    grid-row: 2;
-    padding: 0.5em 2em 1em 2em;
 }
