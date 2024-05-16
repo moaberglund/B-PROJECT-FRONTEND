@@ -19,6 +19,10 @@ form {
         width: 250px;
     }
 
+    select {
+        @extend input;
+    }
+
     textarea {
         width: 250px;
         height: 75px;

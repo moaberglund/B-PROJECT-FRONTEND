@@ -47,9 +47,9 @@ async function addMenu(category, name, price, description) {
     let data = await response.json();
 
     if (response.ok) {
-        document.getElementById("info-message").innerHTML = "Successfuly added!" + data.message;
+        document.getElementById("info-message").innerHTML = data.message;
     } else {
-        document.getElementById("error-message").innerHTML = "Failed to add menu object." + data.error;
+        document.getElementById("error-message").innerHTML = data.error;
         throw new Error("Failed to add menu object");
     }
 
@@ -59,5 +59,4 @@ async function addMenu(category, name, price, description) {
     document.getElementById("menu-price").value = "";
     document.getElementById("menu-description").value = "";
 
-    return await response.json();
 }
