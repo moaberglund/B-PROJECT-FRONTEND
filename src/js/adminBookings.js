@@ -61,12 +61,15 @@ async function processAPI() {
         article.classList.add("bookings-for-admin");
 
         article.innerHTML = `
+        <p>Day: ${day}</p>
+        <p>Time: ${time}</p>
+        <p>Amount: ${amountOfPeople}</p>
+        <br>
         <p>Name: ${name}</p>
         <p>Phone: ${phone}</p>
         <p>Mail: ${mail}</p>
-        <p>Amount: ${amountOfPeople}</p>
-        <p>Day: ${day}</p>
-        <p>Time: ${time}</p>
+     
+        
         `
         print.appendChild(article);
     });
