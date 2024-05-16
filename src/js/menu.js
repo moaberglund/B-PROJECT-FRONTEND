@@ -1,5 +1,16 @@
 "use strict";
 
+/* Laddningsanimation som visar spinnern */
+function showLoadingSpinner() {
+    document.querySelector(".spinner").style.display = "block";
+}
+/* Laddningsanimation som gömmer spinnern */
+function hideLoadingSpinner() {
+    document.querySelector(".spinner").style.display = "none";
+}
+
+//API hantering för meny
+
 //url för meny rutt
 const url = "https://b-project.onrender.com/api/menu";
 
@@ -39,10 +50,10 @@ async function processAPI() {
     pizza.innerHTML = `<h2 class="menu-title">Pizza</h2>`;
     //article för efterrätter
     const sweet = document.getElementById("sweet");
-    sweet.innerHTML =  `<h2 class="menu-title">Sweet Tooth</h2>`;
+    sweet.innerHTML = `<h2 class="menu-title">Sweet Tooth</h2>`;
     //article för vin
     const wine = document.getElementById("wine");
-    wine.innerHTML =  `<h2 class="menu-title">Wine</h2>`;
+    wine.innerHTML = `<h2 class="menu-title">Wine</h2>`;
 
     result.forEach(item => {
         const id = item._id;
