@@ -25,23 +25,23 @@ if (addMenuBtn) {
 
 async function addMenu(category, name, price, description) {
 
-    let Menu = {
+    let MenuSchema = {
         category: category,
         name: name,
         price: price,
         description: description
     }
-    console.log(Menu);
+    console.log(MenuSchema);
 
     const token = localStorage.getItem("token");
 
-    const response = await fetch(url, {
+    const response = await fetch(url + "/postmenu", {
         method: "POST",
         headers: {
             'Authorization': 'Bearer ' + token,
             "content-type": "application/json"
         },
-        body: JSON.stringify(Menu)
+        body: JSON.stringify(MenuSchema)
     });
 
     let data = await response.json();
@@ -57,7 +57,7 @@ async function addMenu(category, name, price, description) {
     document.getElementById("menu-category").value = "";
     document.getElementById("menu-name").value = "";
     document.getElementById("menu-price").value = "";
-    document.getElementById("menu-description").value ="";
+    document.getElementById("menu-description").value = "";
 
     return await response.json();
 }

@@ -7,7 +7,11 @@
     <title>Admin</title>
 
     <link rel="stylesheet" href="../scss/main.scss">
-    
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/9543e08d94.js" crossorigin="anonymous"></script>
+
+
     <script type="module" src="../js/protected.js"></script>
     <script type="module" src="../js/postMenu.js"></script>
 
@@ -16,12 +20,16 @@
 <body>
 
     <header>
-        <nav id="desktop-navigation">
-            <ul>
-                <li><a id="logout" href="../index.html">Log out</a></li>
-                <li><a href="admin.html">Admin</a></li>
-            </ul>
-        </nav>
+        <div class="header-3">
+            <nav id="desktop-navigation">
+                <ul>
+                    <li><a href="admin-messages.html">Messages</a></li>
+                    <li><a href="admin-bookings.html">Bookings</a></li>
+                    <li><a id="logout" href="../index.html"><i class="fa-solid fa-arrow-right-from-bracket fa-lg" style="color: #000000;"></i></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -43,21 +51,21 @@
                         <option value="Wine">Wine</option>
 
                     </select><br>
-        
+
                     <label for="menu-name">Name:</label><br>
                     <input id="menu-name" name="menu-name" type="text"><br>
-        
+
                     <label for="menu-price">Price:</label><br>
                     <input id="menu-price" name="menu-price" type="number"><br>
 
                     <label for="menu-description">Description:</label><br>
                     <textarea name="menu-description" id="menu-description"></textarea><br>
-        
+
                     <button id="addMenuBtn">Add new</button>
-        
+
                     <p id="info-message"></p>
                     <p id="error-message"></p>
-        
+
                 </form>
             </div>
 
