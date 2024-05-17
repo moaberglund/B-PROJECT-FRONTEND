@@ -13,7 +13,7 @@
 
 
     <script type="module" src="../js/protected.js"></script>
-    <script type="module" src="../js/postMenu.js"></script>
+    <script type="module" src="../js/adminMenu.js"></script>
 
 </head>
 
@@ -23,11 +23,15 @@
         <div class="header-3">
             <nav id="desktop-navigation">
                 <ul>
-                    <li><a title="Add new menu" href="admin.html"><i class="fa-solid fa-plus fa-lg" style="color: #ffffff;"></i></a></li>
-                    <li><a title="Messages" href="admin-messages.html"><i class="fa-regular fa-envelope fa-lg" style="color: #000000;"></i></a></li>
-                    <li><a title="Bookings" href="admin-bookings.html"><i class="fa-regular fa-calendar fa-lg" style="color: #000000;"></i></a></li>
-                    <li><a title="Log out" id="logout" href="../index.html"><i class="fa-solid fa-arrow-right-from-bracket fa-lg" style="color: #000000;"></i></a></li>
-                    
+                    <li><a title="Add new menu" href="admin.html"><i class="fa-solid fa-plus fa-lg"
+                                style="color: #ffffff;"></i></a></li>
+                    <li><a title="Messages" href="admin-messages.html"><i class="fa-regular fa-envelope fa-lg"
+                                style="color: #000000;"></i></a></li>
+                    <li><a title="Bookings" href="admin-bookings.html"><i class="fa-regular fa-calendar fa-lg"
+                                style="color: #000000;"></i></a></li>
+                    <li><a title="Log out" id="logout" href="../index.html"><i
+                                class="fa-solid fa-arrow-right-from-bracket fa-lg" style="color: #000000;"></i></a></li>
+
                 </ul>
             </nav>
         </div>
@@ -35,12 +39,12 @@
 
     <main>
 
-        <section>
-            
+        <section class="admin">
+
             <div id="addmenu">
                 <h1 class="fade">Add new menu object</h1>
                 <form id="add-menu">
-                    
+
 
                     <label for="menu-category">Category:</label><br>
                     <select name="menu-category" id="menu-category">
@@ -67,6 +71,24 @@
                     <p id="error-message"></p>
 
                 </form>
+            </div>
+
+            <div id="editmenu">
+                <h1 class="fade">Edit menu object</h1>
+                <button id="loadBtn">Load menu</button>
+
+                <div id="print-menu-admin">
+                    
+                    <article id="nibble"></article>
+
+                    <article id="pizza"></article>
+
+                    <article id="sweet"></article>
+
+                <article id="wine"></article>
+
+                </div>
+
             </div>
 
 
