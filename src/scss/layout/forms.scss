@@ -1,39 +1,48 @@
 $basil: #4B3A29;
 
-form {
-    width: 250px;
-    margin: 0 auto;
+#form-container {
+    width: 400px;
+    margin: 2em auto;
+    background-color: #fcfcfc;
+    padding: 2em 3em 6em;
+    box-shadow: 1px 4px 10px 1px #aaa;
+
+    * {
+        box-sizing: border-box;
+    }
 
     h2 {
-        padding-bottom: 0.5em;
-        font-weight: 500;
+        text-align: center;
+        margin: 1em auto;
     }
 
     label {
-        padding-top: 1.5em;
-        letter-spacing: 1px;
+        color: #777;
+        font-size: 0.8em;
     }
 
     input {
-        padding: 0.3em;
-        width: 250px;
+        margin-bottom: 0.5em;
+        display: block;
+        height: 32px;
+        padding: 6px 16px;
+        width: 100%;
+        border: none;
+        background-color: #f3f3f3;
     }
-
-    select {
-        @extend input;
-    }
-
     textarea {
-        width: 250px;
-        height: 75px;
+        @extend input;
+        height: 10em;
+
     }
+
     button {
         padding: 0.5em 0.8em;
         border-radius: 50px;
         background-color: $basil;
         float: right;
         display: block;
-        margin: 2.5em auto;
+        margin: 1em auto;
         color: white;
 
         &:hover {

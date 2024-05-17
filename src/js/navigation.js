@@ -10,15 +10,16 @@ openBtn.addEventListener("click", toggleMenu);
 closeBtn.addEventListener("click", toggleMenu);
 
 //funktion
+
 function toggleMenu() {
     let navMenuEl = document.getElementById("burger-nav");
-    //kolla vad display är inställt som (none/block)
-    let style = window.getComputedStyle(navMenuEl);
-
-    //ändra mellan none/block beroende på
-    if (style.display === "none") {
-        navMenuEl.style.display = "block";
+    if (navMenuEl.classList.contains("open")) {
+        navMenuEl.addEventListener("transitionend", () => {
+            navMenuEl.style.visibility = "hidden";
+        }, { once: true });
+        navMenuEl.classList.remove("open");
     } else {
-        navMenuEl.style.display = "none";
+        navMenuEl.style.visibility = "visible";
+        navMenuEl.classList.add("open");
     }
 }
