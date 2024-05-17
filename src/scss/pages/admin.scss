@@ -1,4 +1,10 @@
 $dough: #DEC9A0;
+$mozzarella: #EBE1D3;
+
+
+#login {
+    margin-top: 3em;
+}
 
 #add-menu {
     margin: 1.5em 1em 1em 3em;
@@ -13,6 +19,7 @@ $dough: #DEC9A0;
     border: 1px dotted grey;
     border-radius: 10px;
 }
+
 .bookings-for-admin {
     @extend .customer-message;
 }
@@ -24,6 +31,7 @@ $dough: #DEC9A0;
     padding: 1em;
     border-radius: 15px;
     font-size: 1.1em;
+
     &:hover {
         cursor: pointer;
         background-color: $dough;
