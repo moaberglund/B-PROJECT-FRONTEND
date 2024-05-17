@@ -17,12 +17,12 @@ if (addBookingBtn) {
         const day = document.getElementById("booking-day").value;
         const time = document.getElementById("booking-time").value;
 
-            // Kontrollera att alla fält är ifyllda
-            if (!name || !phone || !mail || !amountOfPeople || !day | !time) {
-                document.getElementById("message").innerHTML = "* All fields are mandatory, make sure you fill them out correctly.";
-                return;
-            }
-  
+        // Kontrollera att alla fält är ifyllda
+        if (!name || !phone || !mail || !amountOfPeople || !day | !time) {
+            document.getElementById("message").innerHTML = "* All fields are mandatory, make sure you fill them out correctly.";
+            return;
+        }
+
         await createBooking(name, phone, mail, amountOfPeople, day, time);
     });
 }
@@ -39,33 +39,46 @@ async function createBooking(name, phone, mail, amountOfPeople, day, time) {
     }
 
     try {
-    const response = await fetch(url, {
-        method: "POST",
-        headers: {
-            "content-type": "Application/json"
-        },
-        body: JSON.stringify(BookingSchema)
-    });
+        showLoadingSpinner();
+        const response = await fetch(url, {
+            method: "POST",
+            headers: {
+                "content-type": "Application/json"
+            },
+            body: JSON.stringify(BookingSchema)
+        });
 
-    if (!response.ok) {
-        document.getElementById("message").innerHTML = "* Failed to send booking.";
-        throw new Error("Misslyckade att skicka kontakt formulär");
-    } else {
-        document.getElementById("message").innerHTML = "Booking sent successfully";
+        if (!response.ok) {
+            document.getElementById("message").innerHTML = "* Failed to send booking.";
+            throw new Error("Misslyckade att skicka kontakt formulär");
+        } else {
+            document.getElementById("message").innerHTML = "Booking sent successfully";
+        }
+
+        // nollställ formuläret
+        document.getElementById("booking-name").value = "";
+        document.getElementById("booking-phone").value = "";
+        document.getElementById("booking-mail").value = "";
+        document.getElementById("booking-amount").value = "";
+        document.getElementById("booking-day").value = "";
+        document.getElementById("booking-time").value = "";
+
+        hideLoadingSpinner();
+        return await response.json();
+
+
+    } catch (error) {
+        hideLoadingSpinner();
+        console.log("Error: ", error);
+        document.getElementById("message").innerHTML = "A problem occured when trying to send the booking...";
     }
-
-    // nollställ formuläret
-    document.getElementById("booking-name").value = "";
-    document.getElementById("booking-phone").value = "";
-    document.getElementById("booking-mail").value = "";
-    document.getElementById("booking-amount").value = "";
-    document.getElementById("booking-day").value = "";
-    document.getElementById("booking-time").value = "";
-
-    return await response.json();
-
-} catch (error) {
-    console.log("Error: ", error);
-    document.getElementById("message").innerHTML = "A problem occured when trying to send the booking...";
 }
+
+/* Laddningsanimation som visar spinnern */
+function showLoadingSpinner() {
+    document.getElementById("loadingSpinner").style.display = "block";
+}
+/* Laddningsanimation som gömmer spinnern */
+function hideLoadingSpinner() {
+    document.getElementById("loadingSpinner").style.display = "none";
 }

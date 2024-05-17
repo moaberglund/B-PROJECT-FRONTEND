@@ -1,14 +1,5 @@
 "use strict";
 
-/* Laddningsanimation som visar spinnern */
-function showLoadingSpinner() {
-    document.querySelector(".spinner").style.display = "block";
-}
-/* Laddningsanimation som gömmer spinnern */
-function hideLoadingSpinner() {
-    document.querySelector(".spinner").style.display = "none";
-}
-
 //API hantering för meny
 
 //url för meny rutt
