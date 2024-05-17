@@ -13,6 +13,7 @@ window.onload = init();
 
 //hämta data från API
 async function fetchAPI() {
+    showLoadingSpinner();
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -108,4 +109,14 @@ async function processAPI() {
         }
     })
 
+}
+
+
+/* Laddningsanimation som visar spinnern */
+function showLoadingSpinner() {
+    document.getElementById("loadingSpinner").style.display = "block";
+}
+/* Laddningsanimation som gömmer spinnern */
+function hideLoadingSpinner() {
+    document.getElementById("loadingSpinner").style.display = "none";
 }
