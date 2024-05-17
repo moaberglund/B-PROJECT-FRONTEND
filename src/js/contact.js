@@ -35,6 +35,7 @@ async function createContactForm(name, phone, mail, textmessage) {
     }
 
     try {
+        showLoadingSpinner();
         const response = await fetch(url, {
             method: "POST",
             headers: {
@@ -56,10 +57,22 @@ async function createContactForm(name, phone, mail, textmessage) {
         document.getElementById("contact-mail").value = "";
         document.getElementById("contact-message").value = "";
 
+        hideLoadingSpinner();
         return await response.json();
 
     } catch (error) {
+        hideLoadingSpinner();
         console.log("Error: ", error);
         document.getElementById("message").innerHTML = "* Ett fel uppstod vid skickandet av meddelandet.";
     }
+}
+
+
+/* Laddningsanimation som visar spinnern */
+function showLoadingSpinner() {
+    document.getElementById("loadingSpinner").style.display = "block";
+}
+/* Laddningsanimation som gömmer spinnern */
+function hideLoadingSpinner() {
+    document.getElementById("loadingSpinner").style.display = "none";
 }
