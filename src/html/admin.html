@@ -43,34 +43,37 @@
 
             <div id="addmenu">
                 <h1 class="fade">Add new menu object</h1>
-                <form id="add-menu">
 
+                <div id="form-container">
 
-                    <label for="menu-category">Category:</label><br>
-                    <select name="menu-category" id="menu-category">
+                    <form id="add-menu">
 
-                        <option value="Nibble">Nibble</option>
-                        <option value="Pizza">Pizza</option>
-                        <option value="Sweet">Sweet</option>
-                        <option value="Wine">Wine</option>
+                        <label for="menu-category">Category:</label><br>
+                        <select name="menu-category" id="menu-category">
 
-                    </select><br>
+                            <option value="Nibble">Nibble</option>
+                            <option value="Pizza">Pizza</option>
+                            <option value="Sweet">Sweet</option>
+                            <option value="Wine">Wine</option>
 
-                    <label for="menu-name">Name:</label><br>
-                    <input id="menu-name" name="menu-name" type="text"><br>
+                        </select><br>
 
-                    <label for="menu-price">Price:</label><br>
-                    <input id="menu-price" name="menu-price" type="number"><br>
+                        <label for="menu-name">Name:</label><br>
+                        <input id="menu-name" name="menu-name" type="text"><br>
 
-                    <label for="menu-description">Description:</label><br>
-                    <textarea name="menu-description" id="menu-description"></textarea><br>
+                        <label for="menu-price">Price:</label><br>
+                        <input id="menu-price" name="menu-price" type="number"><br>
 
-                    <button id="addMenuBtn">Add new</button>
+                        <label for="menu-description">Description:</label><br>
+                        <textarea name="menu-description" id="menu-description"></textarea><br>
 
-                    <p id="info-message"></p>
-                    <p id="error-message"></p>
+                        <button id="addMenuBtn">Add new</button>
 
-                </form>
+                        <p id="info-message"></p>
+                        <p id="error-message"></p>
+
+                    </form>
+                </div>
             </div>
 
             <div id="editmenu">
@@ -78,14 +81,14 @@
                 <button id="loadBtn">Load menu</button>
 
                 <div id="print-menu-admin">
-                    
+
                     <article id="nibble"></article>
 
                     <article id="pizza"></article>
 
                     <article id="sweet"></article>
 
-                <article id="wine"></article>
+                    <article id="wine"></article>
 
                 </div>
 

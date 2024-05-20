@@ -22,7 +22,7 @@ async function loginUser(username, password) {
         username: username,
         password: password
     }
-
+    showLoadingSpinner();
     const response = await fetch(url + "/api/login/login", {
         method: "POST",
         headers: {
@@ -39,14 +39,26 @@ async function loginUser(username, password) {
         localStorage.setItem("user", User.username);
         window.location.href = "admin.html"
     } else {
+        hideLoadingSpinner();
         document.getElementById("error-message").innerHTML = "Misslyckade att logga in användare, fel användarnamn eller lösenord";
         throw new Error("Misslyckade att logga in användare, fel användarnamn eller lösenord");
-        
+
     }
 
     // nollställ formuläret
     document.getElementById("username").value = "";
     document.getElementById("password").value = "";
 
+    hideLoadingSpinner();
     return await response.json();
+}
+
+
+/* Laddningsanimation som visar spinnern */
+function showLoadingSpinner() {
+    document.getElementById("loadingSpinner").style.display = "block";
+}
+/* Laddningsanimation som gömmer spinnern */
+function hideLoadingSpinner() {
+    document.getElementById("loadingSpinner").style.display = "none";
 }

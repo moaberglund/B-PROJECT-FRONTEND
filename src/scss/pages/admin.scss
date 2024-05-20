@@ -1,5 +1,6 @@
 $dough: #DEC9A0;
 $mozzarella: #EBE1D3;
+$basil: #4B3A29;
 
 .admin {
     display: flex;
@@ -10,16 +11,16 @@ $mozzarella: #EBE1D3;
 #login {
     margin-top: 3em;
 }
-
-#add-menu {
-    margin: 1.5em 1em 1em 3em;
+#addmenu {
+    margin: 0 auto;
 }
 #editmenu {
     margin-top: 2em;
     width: 100vw;
 }
+
 .customer-message {
-    margin: 1em 2em;
+    margin: 1em auto;
     padding: 0.5em;
     max-width: 400px;
     line-height: 1.4em;
@@ -34,8 +35,10 @@ $mozzarella: #EBE1D3;
 
 //knapp
 #loadBtn {
+    display: block;
     background-color: white;
-    margin: 1em 3em;
+    margin: 1em auto;
+    align-items: center;
     padding: 1em;
     border-radius: 15px;
     font-size: 1.1em;
@@ -52,13 +55,9 @@ $mozzarella: #EBE1D3;
         background-color: rgb(255, 255, 255, 0.7);
         width: 490px;
         max-width: 90vw;
-        margin: 0.5em 2em;
+        margin: 0.5em auto;
         padding: 0.5em 1em;
         line-height: 1.6em;
-
-        &:hover {
-            cursor: default;
-        }
 
         div {
             padding: 0.8em 0;
@@ -76,6 +75,23 @@ $mozzarella: #EBE1D3;
         h3 {
             font-weight: 600;
             letter-spacing: 1px;
+        }
+    }
+
+    button {
+        display: inline;
+        padding: 0.5em 0.8em;
+        border-radius: 50px;
+        background-color: $basil;
+        
+        margin: 1em 0.5em;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: $basil;
+            font-weight: bolder;
+            cursor: pointer;
         }
     }
 }
