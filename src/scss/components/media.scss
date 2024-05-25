@@ -1,9 +1,20 @@
 #header-image {
 
     background-image: url("../media/pizza-oven.jpg");
-    height: 50vh;
-    background-position: center;
+    height: 55vh;
+    background-attachment: fixed;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    #header-image {
+        height: 500px;
+        background-position: top;
+        background-size: auto;
+    }
     
 }

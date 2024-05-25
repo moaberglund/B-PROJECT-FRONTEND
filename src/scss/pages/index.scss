@@ -13,25 +13,26 @@ $basil: #4B3A29;
         text-transform: uppercase;
         letter-spacing: 7px;
         word-spacing: 7px;
-
+    }
+    h2 {
+        @extend h1;
+        font-size: 1.5em;
     }
 }
 
 #index {
     display: flex;
     flex-direction: column;
-    width: 95%;
     margin: 0 auto;
     line-height: 1.5em;
 
 
     article {
-        width: 1000px;
-        max-width: 90vw;
+   
+        width: 100%;
         margin: 0.8em auto;
         padding: 0.5em 1em;
         line-height: 1.6em;
-        border-radius: 5px;
         background-color: rgb(255, 255, 255, 0.7);
 
         &:hover {
@@ -39,11 +40,10 @@ $basil: #4B3A29;
         }
     }
 
-    div {
-        padding: 0.8em 0;
-    }
-
     h2 {
+        max-width: 90vw;
+        width: 1000px;
+        margin: 0 auto;
         color: $basil;
         text-transform: uppercase;
         font-size: 1.7em;
@@ -52,13 +52,19 @@ $basil: #4B3A29;
         padding: 0.5em 0;
     }
 
+    p {
+        max-width: 90vw;
+
+        width: 1000px;
+        margin: 0 auto;
+    }
+
     .image {
         img {
             width: 1000px;
-            max-width: 90vw;
+            max-width: 100%;
             margin: 0 auto;
             display: block;
-            border-radius: 5px;
         }
     }
 
