@@ -6,7 +6,7 @@
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 #vineyard-image {
@@ -34,21 +34,27 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 @media screen and (max-width: 600px) {
 
     #header-image {
         height: 500px;
+        background-attachment: scroll;
         background-position: top;
         background-size: auto;
     }
 
     #vineyard-image {
         height: 400px;
-        background-position: left top;
+        background-attachment: scroll;
+        background-position: top left;
+
     }
 
     #table-image {
         height: 500px;
-        background-position: left top;
+        background-position: left bottom;
+        background-attachment: scroll;
+
     }
 }
