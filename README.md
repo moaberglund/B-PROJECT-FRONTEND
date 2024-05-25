@@ -20,5 +20,7 @@ Webbplatsen har även ett administrations gränssnitt för personalen att kunna 
 Den publika webbplatsen och administrationsgränssnittet konsumerar data från ett API.
 Backend delen till denna applikation går att granska på följande repo:
 [Projekt - Backend](https://github.com/moaberglund/B-PROJECT)
+---
 Det ligger hostat via Render:
 [URL till API](https://b-project.onrender.com/api/)
+---
