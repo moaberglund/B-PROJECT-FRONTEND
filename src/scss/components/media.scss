@@ -53,9 +53,10 @@
     }
 
     #table-image {
-        height: 500px;
-        background-position: left;
+        height: 35vh;
         background-attachment: scroll;
-        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
