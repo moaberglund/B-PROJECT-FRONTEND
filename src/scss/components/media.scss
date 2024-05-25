@@ -27,6 +27,13 @@
     background-size: cover;
 }
 
+#port {
+    background-image: url("../media/port.jpg");
+    height: 35vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 @media screen and (max-width: 600px) {
 
     #header-image {

@@ -3,3 +3,22 @@
     margin: 3em auto;
 
 }
+
+.text {
+    width: 100%;
+    margin: 0.8em auto;
+    padding: 8em 1em;
+    line-height: 1.6em;
+    background-color: rgb(255, 255, 255, 0.7);
+
+    &:hover {
+        cursor: default;
+    }
+
+    p {
+        max-width: 90vw;
+
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
