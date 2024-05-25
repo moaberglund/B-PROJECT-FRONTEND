@@ -9,6 +9,24 @@
     
 }
 
+#vineyard-image {
+    background-image: url("../media/vineyard.jpg");
+    height: 35vh;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#table-image {
+    background-image: url("../media/table.jpg");
+    height: 55vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media screen and (max-width: 600px) {
 
     #header-image {
@@ -16,5 +34,4 @@
         background-position: top;
         background-size: auto;
     }
-    
 }
