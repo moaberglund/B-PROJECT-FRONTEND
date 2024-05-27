@@ -30,7 +30,7 @@ header {
 
     nav {
         background-color: $coal;
-        position: sticky;
+        position: fixed;
         left: -30;
         top: 0;
         height: 100vh;
@@ -44,6 +44,7 @@ header {
         &.open {
             transform: translateX(0); // Slutposition på skärmen
             visibility: visible;
+            position: fixed;
             opacity: 1;
         }
 
@@ -105,7 +106,6 @@ header {
         font-size: 1.3em;
         background-color: $coal;
         color: $mozzarella;
-
         &:hover {
             color: lighten($mozzarella, 40%);
         }
