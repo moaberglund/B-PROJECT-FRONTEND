@@ -30,7 +30,7 @@ header {
 
     nav {
         background-color: $coal;
-        position: fixed;
+        position: sticky;
         left: -30;
         top: 0;
         height: 100vh;
@@ -105,6 +105,7 @@ header {
         font-size: 1.3em;
         background-color: $coal;
         color: $mozzarella;
+
         &:hover {
             color: lighten($mozzarella, 40%);
         }
