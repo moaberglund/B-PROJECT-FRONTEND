@@ -22,3 +22,10 @@
         margin: 0 auto;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .map {
+        max-width: 90%;
+        margin: 3em auto;
+    }
+}
