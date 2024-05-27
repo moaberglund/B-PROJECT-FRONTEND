@@ -27,5 +27,8 @@
     .map {
         max-width: 90%;
         margin: 3em auto;
+        iframe {
+            max-width: 90%;
+        }
     }
 }
